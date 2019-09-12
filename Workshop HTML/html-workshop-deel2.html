@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="nl">
+	<head>
+		<meta charset="utf-8">
+		<title>Devoxx4Kids - HTML</title>
+		<link rel="icon" type="image/png" href="images/favicon.png" />
+		<link rel="stylesheet" href="includes/html-workshop.css">
+		<script src="includes/gmap.js"></script>
+	</head>
+	<body>
+		<h1>Website bouwen - deel 2</h1>
+		
+		<h2>Javascript</h2>
+		
+		<h3>Je eigen javascript</h3>
+		
+		<p>Je kan het <code>onclick</code> attribuut van een button of link gebruiken om Javascript uit te voeren.</p> 
+		
+		<aside class="opdracht">
+			<img src="images/opdracht.png" alt="Opdracht:" />
+			<p>
+				Voeg onderstaand stukje code toe aan je website.
+			</p>
+		</aside>
+		
+		<figure>
+			<figcaption>voorbeeld 13: Javascript</figcaption>		
+			<pre><code>&lt;button type=&quot;button&quot; onclick=&quot;document.getElementById('demo').innerHTML = 'Je hebt op de button geklikt'&quot;&gt;
+	Klik hier
+&lt;/button&gt;
+&lt;p id=&quot;demo&quot;&gt;&lt;/p&gt;</code></pre>
+		</figure>
+		
+		<p>Het script in voorbeeld 13 vervangt de html van de tag waar attribuut <code>id="demo"</code>.</p> 
+		
+		<aside class="opdracht">
+			<img src="images/opdracht.png" alt="Opdracht:" />
+			<p>
+				Voeg een extra button uit voorbeeld 12 toe aan je website. Klik afwisselend op beide buttons. Wat gebeurt er?
+			</p>
+		</aside>
+		
+		<figure>
+			<figcaption>voorbeeld 14: Javascript</figcaption>		
+			<pre><code>&lt;button type=&quot;button&quot; onclick=&quot;document.getElementById('demo').innerHTML = Date()&quot;&gt;
+	Wat is de datum?
+&lt;/button&gt;</code></pre>
+		</figure>		
+		
+		<h3>Javascript van anderen</h3>
+		
+		<p>Om het jezelf makkelijk te maken kan je ook Javascript van anderen gebruiken. Je kan bijvoorbeeld Google Maps gebruiken om een adres op je website te tonen.</p>
+		<script>
+			gmap("Nevelgaarde 20G, 3436 ZZ Nieuwegein, Nederland");
+		</script>
+		
+		<p>In de <code>head</code> voeg je een <code>script</code> tag toe om de browser te vertellen dat er een Javascript bestand moet ingeladen worden.</p>
+		<figure>
+			<figcaption>voorbeeld 15: Google Maps Javascript</figcaption>	
+			<pre><code>&lt;script src="includes/gmap.js"/&gt;&lt;/script&gt;</code></pre>
+		</figure>
+		
+		<p>In de <code>body</code> voeg je nog een stukje javascript toe op de plek waar je het kaartje wilt tonen.</p>		
+		<figure>
+			<figcaption>voorbeeld 16: Google Maps Javascript</figcaption>	
+		<pre><code>&lt;script&gt;
+	gmap("Nevelgaarde 20G, 3436 ZZ Nieuwegein, Nederland");
+&lt;/script&gt;
+		</code></pre>
+		</figure>
+
+		<aside class="opdracht">
+			<img src="images/opdracht.png" alt="Opdracht:" />
+			<p>
+				Probeer op je website een adres met Google Maps te tonen.
+			</p>
+		</aside>
+		
+		<h2>YouTube filmpje embedden</h2>
+		
+		<p>Bij een YouTube filmpje kan je als je op 'Delen' voor de optie 'insluiten' kiezen. Je krijgt dan een stukje code te zien dat je kan kopiëren en plakken binnen de <code>body</code> van je eigen website.</p>		
+		<figure>
+			<figcaption>voorbeeld 17: YouTube</figcaption>	
+		<pre><code>&lt;iframe width=&quot;560&quot; height=&quot;315&quot; 
+	src=&quot;https://www.youtube.com/embed/J9XMlU7VF0U&quot; 
+	frameborder=&quot;0&quot; 
+	allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; 
+	allowfullscreen&gt;
+&lt;/iframe&gt;</code></pre>
+		</figure>
+		
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/J9XMlU7VF0U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscr></iframe>
+		
+		<aside class="opdracht">
+			<img src="images/opdracht.png" alt="Opdracht:" />
+			<p>
+				Probeer op je website een YouTube filmpje te tonen.
+			</p>
+		</aside>
+		
+		<aside class="tip">
+			<img src="images/tip.png" alt="Tip:" />
+			<p>
+				Met de <code>width</code> en <code>height</code> attributen kan je het filmpje groter of kleiner maken.
+			</p>
+		</aside>		
+		
+		
+		<h2>Extern CSS</h2>
+		
+		<p>
+			We hebben tot nu toe gebruik gemaakt van CSS styling die in de pagina staat. Als je website uit meerdere pagina's bestaat dan wil je waarschijnlijk dezelfde stijl voor al je pagina's gebruiken. 
+			Dit kan door de CSS code in een extern bestand plaatsen en dat bestand in je pagina te includen.
+		</p>		
+		<figure>
+			<figcaption>voorbeeld 18: externe CSS</figcaption>	
+		<pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;includes/html-workshop.css&quot;&gt;</code></pre>
+		</figure>
+		
+		<aside class="opdracht">
+			<img src="images/opdracht.png" alt="Opdracht:" />
+			<p>
+				Verplaats de styling voor je website naar een extern bestand.
+			</p>
+			<ol>
+				<li>Maak een nieuw bestand aan in Notepad++.</li> 
+				<li>Verplaats de code die binnen de <code>style</code> tags van je HTML bestand staat naar het nieuwe bestand.</li>
+				<li>Sla het bestand op in de map C:\Devoxx4kids\HTML\includes. Kies een naam zonder spaties die eindigt op .css</li>			
+				<li>Verwijder de <code>style</code> tags uit je HTML bestand.</li>
+				<li>Voeg een include toe voor je CSS bestand zoals in voorbeeld 18.</li>
+			</ol>	
+		</aside>
+		
+		<a href="html-workshop-deel1.html">&lt;&lt;&lt; Terug naar deel 1 van de workshop</a>
+		
+	</body>
+</html>

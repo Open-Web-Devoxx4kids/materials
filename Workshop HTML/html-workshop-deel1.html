@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="nl">
+	<head>
+		<meta charset="utf-8">
+		<title>Devoxx4Kids - HTML</title>
+		<link rel="icon" type="image/png" href="images/favicon.png" />
+		<link rel="stylesheet" href="includes/html-workshop.css">
+		<script src="includes/gmap.js"></script>
+	</head>
+	<body>
+		<h1>Website bouwen - deel 1</h1>
+
+		<h2>&lt;HTML/&gt;</h2>
+		<p>
+			HTML is een taal die je gebruikt om aan de browser te vertellen hoe hij de inhoud van je pagina aan de bezoeker van je website moet laten zien.
+	 	</p>
+		<p>
+			Met een tag vertel je de browser wat hij met een stukje inhoud moet doen. Een tag staat altijd tussen de tekens <code>&lt;</code> en <code>&gt;</code>. Tags komen voor in paren en zijn van toepassing op wat er tussen staat.
+	 	</p>
+
+		<p>
+			Een pagina start altijd met de tag <code>html</code>. Zo weet de browser dat de pagina in de taal HTML geschreven is.
+		</p>
+		<figure>
+			<figcaption>voorbeeld 1: html tag</figcaption>
+			<pre><code>&lt;html&gt;&lt;/html&gt;</code></pre>
+		</figure>
+
+		<p>
+			Binnen de <code>head</code> tags zet je informatie over de pagina zoals de paginatitel. De paginatitel wordt weergegeven tussen de <code>title</code> tags. 
+			Tussen de <code>body</code> tags komt de inhoud van de pagina. Dat is wat in de webbrowser zal worden getoond.
+		</p>
+
+		<figure>
+			<figcaption>voorbeeld 2: html pagina</figcaption>
+			<pre><code>&lt;html&gt;
+  &lt;head&gt;
+	&lt;meta charset=&quot;utf-8&quot;&gt;
+	&lt;title&gt;Mijn titel&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+		</figure>
+		
+		<aside class="opdracht">
+			<img src="images/opdracht.png" alt="Opdracht:" />
+			<p>
+				Maak nu je eigen webpagina. 
+			</p>
+			<ol>
+				<li>Maak een nieuw bestand aan in Notepad++.</li> 				
+				<li>Kopieer en plak voorbeeld 2 in het bestand.</li>
+				<li>Sla het bestand op in de map C:\Devoxx4kids\HTML. Kies een naam zonder spaties die eindigt op .html</li>
+				<li>Open nu je pagina in Chrome of een andere webbrowser.</li>
+			</ol>
+		</aside>
+		
+		<aside class="vraag">		
+			<img src="images/vraag.png" alt="Vraag:" />
+			<p>
+				Waar zie je de titel van je pagina?
+			</p>
+		</aside>
+		
+		<h2>Tekst</h2>
+
+		<p>Tekst hoort thuis in de <code>body</code> en plaats je in een paragraaf <code>p</code> tag.</p>
+
+		<figure>
+			<figcaption>voorbeeld 3: paragraaf</figcaption>
+			<pre><code>&lt;p&gt; mijn hele interessante tekst &lt;/p&gt;</code></pre>
+		</figure>
+
+		<aside class="opdracht">
+			<img src="images/opdracht.png" alt="Opdracht:" />
+			<p>
+				Hebben jullie al bedacht waar je webpagina over zal gaan? Schrijf een stukje tekst!
+			</p>
+		</aside>
+		
+		<aside class="tip">
+			<img src="images/tip.png" alt="Tip:" />
+			<p>
+				Gebruik de F5 knop om de pagina in je browser te verversen zodat je je wijzigingen kan bekijken.
+			</p>
+		</aside>		
+		
+		<h2>Titels</h2>
+
+		<figure>
+			<figcaption>voorbeeld 4: titel</figcaption>
+			<pre><code>&lt;h1&gt;Grote titel&lt;/h1&gt;
+&lt;h2&gt;Minder grote titel&lt;/h2&gt;
+			</code></pre>
+		</figure>
+		
+		<aside class="opdracht">
+			<img src="images/opdracht.png" alt="Opdracht:" />
+			<p>
+				Er zijn 6 niveaus voor titels. Probeer ze uit. 
+			</p>
+		</aside>
+		
+		<p>
+			Titels geven structuur aan je pagina, zo kan de bezoeker van je pagina meteen zien welke tekst op je pagina heel belangrijk is en welke tekst minder belangrijk.
+		</p>		
+		
+
+		<h2>Links</h2>
+		<figure>
+			<figcaption>voorbeeld 5: links</figcaption>
+			<pre><code>Als je iets niet weet, dan zoek je het op &lt;a href="http://www.google.nl"&gt;<a href="http://www.google.nl" target="_blank">Google</a>&lt;/a&gt;</code></pre>
+		</figure>
+		
+		<p>
+			We gebruiken het attribuut <code>href</code> om de browser te vertellen naar welke pagina de bezoeker moet gaan als hij op de link klinkt.
+		</p>
+		
+		<aside class="opdracht">
+			<img src="images/opdracht.png" alt="Opdracht:" />
+			<p>
+				Maak een link in je tekst naar een andere website.
+			</p>
+		</aside>
+		
+		<aside class="tip">
+			<img src="images/tip.png" alt="Tip:" />
+			<p>
+				Als je wilt dat de link in een nieuwe pagina opent dan kan je het attribuut <code>target="_blank"</code> toevoegen aan je link.
+			</p>
+		</aside>
+
+
+		<h2>Lijsten</h2>
+		
+		<p>
+			Er zijn twee soorten lijsten in HTML. 
+		</p>
+		
+		<figure>
+			<figcaption>voorbeeld 6: ongeordende lijst</figcaption>
+			<pre><code>&lt;ul&gt;
+	&lt;li&gt;blauw&lt;/li&gt;
+	&lt;li&gt;rood&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+		</figure>
+		
+		<figure>
+			<figcaption>voorbeeld 7: geordende lijst</figcaption>
+			<pre><code>&lt;ol&gt;
+	&lt;li&gt;eerste&lt;/li&gt;
+	&lt;li&gt;tweede&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+		</figure>		
+		
+		<aside class="opdracht">
+			<img src="images/opdracht.png" alt="Opdracht:" />
+			<p> 
+				Probeer beide typen lijsten op je website. Wat is het verschil?
+			</p>
+		</aside>
+
+		<h2>Andere kleuren!</h2>
+
+		<p>
+			Om kleuren te veranderen maken we gebruik van CSS. Dit is een stukje code waarmee je de stijl van je pagina kan aanpassen. Je kan voor elk type tag een stijl toevoegen en dat plaats je binnen de <code>style</code> tag in de <code>head</code> van je pagina.
+		</p>
+		
+		<aside class="opdracht">
+			<img src="images/opdracht.png" alt="Opdracht:" />
+			<p>
+				Voeg onderstaand stukje code toe binnen de <code>head</code> tags van je pagina en kijk wat er gebeurd.
+			</p>
+		</aside>
+		
+		<figure>
+			<figcaption>voorbeeld 8: tekstkleur</figcaption>
+			<pre><code>&lt;style&gt;
+	p {
+		color: #ff0000;
+	}
+&lt;/style&gt;
+			</code></pre>
+		</figure>
+		
+		<p>Elke kleur heeft een eigen kleurencode (hexcode).</p>
+		
+		<aside class="tip">
+			<img src="images/tip.png" alt="Tip:" />
+			<p>
+				Je kan een <a href="https://www.w3schools.com/colors/colors_picker.asp" target="blank">kleurenpikker</a> gebruiken om de hexcodes voor verschillende kleuren te vinden.
+			</p>
+		</aside>
+		
+		<aside class="opdracht">
+			<img src="images/opdracht.png" alt="Opdracht:" />
+			<p>
+				Probeer meerdere kleuren uit en probeer ook de titels van kleur te veranderen.
+			</p>
+		</aside>
+
+		<p>Je kan ook de achtergrondkleur van de pagina veranderen.</p>
+
+		<figure>
+			<figcaption>voorbeeld 9: achtergrondkleur</figcaption>		
+			<pre><code>&lt;style&gt;
+	body {
+		background-color: #e6ffff	
+	}
+&lt;/style&gt;
+			</code></pre>
+		</figure>
+		
+		<p>
+			Wil je sommige tekstblokken in een andere kleur? Dat kan door een <code>class</code> attribuut aan een tag mee te geven. In de <code>style</code> tag kan je dan voor die class een aparte stijl bepalen.
+		</p>
+		
+		<figure>
+			<figcaption>voorbeeld 10: class</figcaption>		
+			<pre><code>&lt;p class=&quot;belangrijk&quot;&gt;Dit is belangrijke tekst&lt;/p&gt;</code></pre>
+			<pre><code>&lt;style&gt;
+	p.belangrijk {
+		color: #ff0000	
+	}
+&lt;/style&gt;
+			</code></pre>
+		</figure>
+		
+		<aside class="opdracht">
+			<img src="images/opdracht.png" alt="Opdracht:" />
+			<p>
+				Markeer enkele paragrafen als belangrijk door de tekstkleur naar rood aan te passen.
+			</p>
+		</aside>
+		
+		<h2>Plaatjes</h2>
+		
+		<p>
+			Om een afbeelding te tonen gebruik je de <code>img</code> tag.
+		</p>
+		
+		<figure>
+			<figcaption>voorbeeld 11: plaatje</figcaption>
+			<pre><code>&lt;img src=&quot;images/plaatje.jpg&quot; /&gt;</code></pre>
+		</figure>
+		
+		<p>
+			Het attribuut <code>src</code> gebruik om de browser te vertellen waar hij het plaatje kan vinden.
+		</p>
+
+		<p>
+			Om de grootte van een plaatje aan te passen kan je een class gebruiken.
+		</p>
+		<figure>
+			<figcaption>voorbeeld 12: plaatje grootte aanpassen</figcaption>		
+			<pre><code>&lt;img class=&quot;heelklein&quot; src=&quot;images/plaatje.jpg&quot; /&gt;</code></pre>
+			<pre><code>&lt;style&gt;
+	img.heelklein {
+		width: 50px;
+		height: auto;
+	}
+&lt;/style&gt;
+			</code></pre>
+		</figure>
+		
+		<aside class="opdracht">
+			<img src="images/opdracht.png" alt="Opdracht:" />
+			<p>
+				Kies een plaatje uit de map images en voeg deze toe aan je pagina. Je kan ook een plaatje van internet downloaden en in de map plaatsen.
+			</p>
+		</aside>
+		
+		<a href="html-workshop-deel2.html">Verder met deel 2 van de workshop &gt;&gt;&gt;</a>
+	</body>
+</html>

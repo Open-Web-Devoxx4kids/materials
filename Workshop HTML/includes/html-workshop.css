@@ -1,0 +1,83 @@
+body {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 20px;
+	line-height: 1.42857;
+	color: #333;
+	padding-left: 30px;
+	padding-top: 10px;
+}
+ul {
+	list-style-type: circle;
+}
+a {
+	color: #337AB7;
+	text-decoration: none;
+}
+a:focus, a:hover {
+	color: #23527C;
+	text-decoration: underline;
+}
+h1, h6 {
+	text-align: center;
+}
+h2 {
+	margin-top: 50px;
+}
+h1 {
+	background-image: url(../images/devoxx4kids.png);
+	background-repeat: no-repeat;
+	font-size: 200%;
+	width: 1000px;
+	height: 351px;
+	}
+
+figure {
+	display:block;			
+	margin:1em 0;			
+	border:1px solid #ccc;
+	border-radius:3px;
+	background:#fff;
+	width: 80%;
+}	
+figure figcaption {
+	display:block;			
+	padding:5px 10px 4px 10px;
+	border-bottom:1px solid #ccc;
+	border-radius:3px 3px 0 0;		
+	background:#f2f2f2;
+	color:#777;
+}
+pre, pre code
+{
+	display:block;
+	margin:0;			
+	cursor:text;			
+	font:normal normal normal 1em/1.4 monaco, courier, monospace;
+}
+pre {
+	padding:10px;
+	font-size:0.8em;
+}
+p code {
+	background: none;
+	color: #0064c8;
+}
+aside {
+	width: 80%;
+	margin: 1em 0;			
+}
+aside.opdracht {
+	border:1px solid orange;
+}
+aside.vraag {
+	border:1px solid blue;
+}
+aside.tip {
+	border:1px solid green;
+}
+aside img {
+	width: 40px;
+	height: auto;
+	margin: 10px  10px 0 15px;
+	float: left;
+}
