@@ -15,33 +15,15 @@
 			HTML is een taal die je gebruikt om aan de browser te vertellen hoe hij de inhoud van je pagina aan de bezoeker van je website moet laten zien.
 	 	</p>
 		<p>
-			Met een tag vertel je de browser wat hij met een stukje inhoud moet doen. Een tag staat altijd tussen de tekens <code>&lt;</code> en <code>&gt;</code>. Tags komen voor in paren en zijn van toepassing op wat er tussen staat.
+			Met een element vertel je de browser wat hij met een stukje inhoud moet doen. Een element staat altijd tussen de tekens <code>&lt;</code> en <code>&gt;</code>. elementen komen voor in paren en zijn van toepassing op wat er tussen staat.
 	 	</p>
 
 		<p>
-			Een pagina start altijd met de tag <code>html</code>. Zo weet de browser dat de pagina in de taal HTML geschreven is.
+			Zo kan je op de pagina bijvoorbeeld een titel tonen met het <code>h1</code> element.
 		</p>
 		<figure>
-			<figcaption>voorbeeld 1: html tag</figcaption>
-			<pre><code>&lt;html&gt;&lt;/html&gt;</code></pre>
-		</figure>
-
-		<p>
-			Binnen de <code>head</code> tags zet je informatie over de pagina zoals de paginatitel. De paginatitel wordt weergegeven tussen de <code>title</code> tags. 
-			Tussen de <code>body</code> tags komt de inhoud van de pagina. Dat is wat in de webbrowser zal worden getoond.
-		</p>
-
-		<figure>
-			<figcaption>voorbeeld 2: html pagina</figcaption>
-			<pre><code>&lt;html&gt;
-  &lt;head&gt;
-	&lt;meta charset=&quot;utf-8&quot;&gt;
-	&lt;title&gt;Mijn titel&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-
-  &lt;/body&gt;
-&lt;/html&gt;</code></pre>
+			<figcaption>voorbeeld 1: h1 element</figcaption>
+			<pre><code>&lt;h1&gt;Dit is mijn pagina!&lt;/h1&gt;</code></pre>
 		</figure>
 		
 		<aside class="opdracht">
@@ -50,47 +32,17 @@
 				Maak nu je eigen webpagina. 
 			</p>
 			<ol>
-				<li>Maak een nieuw bestand aan in Notepad++.</li> 				
-				<li>Kopieer en plak voorbeeld 2 in het bestand.</li>
-				<li>Sla het bestand op in de map C:\Devoxx4kids\HTML. Kies een naam zonder spaties die eindigt op .html</li>
-				<li>Open nu je pagina in Chrome of een andere webbrowser.</li>
+				<li>Open in de browser de volgende URL: <a href="https://jsbin.com">https://jsbin.com</a>.</li>
+				<li>Bedenk een leuke titel voor jouw website zoals in voorbeeld 1.</li>
 			</ol>
 		</aside>
 		
-		<aside class="vraag">		
-			<img src="images/vraag.png" alt="Vraag:" />
-			<p>
-				Waar zie je de titel van je pagina?
-			</p>
-		</aside>
-		
-		<h2>Tekst</h2>
-
-		<p>Tekst hoort thuis in de <code>body</code> en plaats je in een paragraaf <code>p</code> tag.</p>
+		<p>
+			Titels geven structuur aan je pagina, zo kan de bezoeker van je pagina meteen zien welke tekst op je pagina heel belangrijk is en welke tekst minder belangrijk.
+		</p>
 
 		<figure>
-			<figcaption>voorbeeld 3: paragraaf</figcaption>
-			<pre><code>&lt;p&gt; mijn hele interessante tekst &lt;/p&gt;</code></pre>
-		</figure>
-
-		<aside class="opdracht">
-			<img src="images/opdracht.png" alt="Opdracht:" />
-			<p>
-				Hebben jullie al bedacht waar je webpagina over zal gaan? Schrijf een stukje tekst!
-			</p>
-		</aside>
-		
-		<aside class="tip">
-			<img src="images/tip.png" alt="Tip:" />
-			<p>
-				Gebruik de F5 knop om de pagina in je browser te verversen zodat je je wijzigingen kan bekijken.
-			</p>
-		</aside>		
-		
-		<h2>Titels</h2>
-
-		<figure>
-			<figcaption>voorbeeld 4: titel</figcaption>
+			<figcaption>voorbeeld 2: titels</figcaption>
 			<pre><code>&lt;h1&gt;Grote titel&lt;/h1&gt;
 &lt;h2&gt;Minder grote titel&lt;/h2&gt;
 			</code></pre>
@@ -102,16 +54,41 @@
 				Er zijn 6 niveaus voor titels. Probeer ze uit. 
 			</p>
 		</aside>
-		
-		<p>
-			Titels geven structuur aan je pagina, zo kan de bezoeker van je pagina meteen zien welke tekst op je pagina heel belangrijk is en welke tekst minder belangrijk.
-		</p>		
-		
+
+		<h2>Tekst</h2>
+
+		<p>Tekst hoort thuis in een paragraaf <code>p</code> element.</p>
+
+		<figure>
+			<figcaption>voorbeeld 3: paragraaf</figcaption>
+			<pre><code>&lt;p&gt; mijn hele interessante tekst &lt;/p&gt;</code></pre>
+		</figure>
+
+		<aside class="opdracht">
+			<img src="images/opdracht.png" alt="Opdracht:" />
+			<div style="padding: 1rem;">
+				<p>
+					Neem de vragen hieronder over op je website en zet elke zin in een paragraaf element. Zet elke vraag in een <code>&lt;strong&gt;</code> element en elk antwoord in een <code>&lt;strong&gt;</code>. Als je code goed geschreven is ziet het er uit als hieronder:
+				</p>
+				<p>
+					<strong>1. Wat is je favoriete video game of tv serie?</strong>
+				</p>
+				<p><em>vul jouw antwoord hier in</em></p>
+				<p>
+					<strong>2. Wat heb je gisteravond gegeten?</strong>
+				</p>
+				<p><em>vul jouw antwoord hier in</em></p>
+				<p>
+					<strong>3. (bedenk hier zelf een leuke vraag)</strong>
+				</p>
+				<p><em>vul jouw antwoord hier in</em></p>
+			</div>
+		</aside>
 
 		<h2>Links</h2>
 		<figure>
-			<figcaption>voorbeeld 5: links</figcaption>
-			<pre><code>Als je iets niet weet, dan zoek je het op &lt;a href="http://www.google.nl"&gt;<a href="http://www.google.nl" target="_blank">Google</a>&lt;/a&gt;</code></pre>
+			<figcaption>voorbeeld 4: links</figcaption>
+			<pre><code>Als je iets niet weet, dan zoek je het op &lt;a href="https://www.google.nl" target="_blank"&gt;Google&lt;/a&gt;</code></pre>
 		</figure>
 		
 		<p>
@@ -128,7 +105,7 @@
 		<aside class="tip">
 			<img src="images/tip.png" alt="Tip:" />
 			<p>
-				Als je wilt dat de link in een nieuwe pagina opent dan kan je het attribuut <code>target="_blank"</code> toevoegen aan je link.
+				<code>target="_blank"</code> zorgt dat de link in een nieuwe pagina opent.
 			</p>
 		</aside>
 
@@ -140,7 +117,7 @@
 		</p>
 		
 		<figure>
-			<figcaption>voorbeeld 6: ongeordende lijst</figcaption>
+			<figcaption>voorbeeld 5: ongeordende lijst</figcaption>
 			<pre><code>&lt;ul&gt;
 	&lt;li&gt;blauw&lt;/li&gt;
 	&lt;li&gt;rood&lt;/li&gt;
@@ -148,7 +125,7 @@
 		</figure>
 		
 		<figure>
-			<figcaption>voorbeeld 7: geordende lijst</figcaption>
+			<figcaption>voorbeeld 6: geordende lijst</figcaption>
 			<pre><code>&lt;ol&gt;
 	&lt;li&gt;eerste&lt;/li&gt;
 	&lt;li&gt;tweede&lt;/li&gt;
@@ -165,18 +142,18 @@
 		<h2>Andere kleuren!</h2>
 
 		<p>
-			Om kleuren te veranderen maken we gebruik van CSS. Dit is een stukje code waarmee je de stijl van je pagina kan aanpassen. Je kan voor elk type tag een stijl toevoegen en dat plaats je binnen de <code>style</code> tag in de <code>head</code> van je pagina.
+			Om kleuren te veranderen maken we gebruik van CSS. Dit is een stukje code waarmee je de stijl van je pagina kan aanpassen. Je kan voor elk type element een stijl toevoegen en dat plaats je binnen het <code>style</code> element.
 		</p>
 		
 		<aside class="opdracht">
 			<img src="images/opdracht.png" alt="Opdracht:" />
 			<p>
-				Voeg onderstaand stukje code toe binnen de <code>head</code> tags van je pagina en kijk wat er gebeurd.
+				Voeg onderstaand stukje code toe bovenaan de pagina:
 			</p>
 		</aside>
 		
 		<figure>
-			<figcaption>voorbeeld 8: tekstkleur</figcaption>
+			<figcaption>voorbeeld 7: tekstkleur</figcaption>
 			<pre><code>&lt;style&gt;
 	p {
 		color: #ff0000;
@@ -190,7 +167,7 @@
 		<aside class="tip">
 			<img src="images/tip.png" alt="Tip:" />
 			<p>
-				Je kan een <a href="https://www.w3schools.com/colors/colors_picker.asp" target="blank">kleurenpikker</a> gebruiken om de hexcodes voor verschillende kleuren te vinden.
+				Je kan een <a href="https://www.w3schools.com/colors/colors_picker.asp" target="blank">kleurenkiezer</a> gebruiken om de hexcodes voor verschillende kleuren te vinden.
 			</p>
 		</aside>
 		
@@ -204,7 +181,7 @@
 		<p>Je kan ook de achtergrondkleur van de pagina veranderen.</p>
 
 		<figure>
-			<figcaption>voorbeeld 9: achtergrondkleur</figcaption>		
+			<figcaption>voorbeeld 8: achtergrondkleur</figcaption>		
 			<pre><code>&lt;style&gt;
 	body {
 		background-color: #e6ffff	
@@ -214,11 +191,11 @@
 		</figure>
 		
 		<p>
-			Wil je sommige tekstblokken in een andere kleur? Dat kan door een <code>class</code> attribuut aan een tag mee te geven. In de <code>style</code> tag kan je dan voor die class een aparte stijl bepalen.
+			Wil je sommige tekstblokken in een andere kleur? Dat kan door een <code>class</code> attribuut aan een element mee te geven. In de <code>style</code> element kan je dan voor die class een aparte stijl bepalen.
 		</p>
 		
 		<figure>
-			<figcaption>voorbeeld 10: class</figcaption>		
+			<figcaption>voorbeeld 9: class</figcaption>		
 			<pre><code>&lt;p class=&quot;belangrijk&quot;&gt;Dit is belangrijke tekst&lt;/p&gt;</code></pre>
 			<pre><code>&lt;style&gt;
 	p.belangrijk {
@@ -238,12 +215,12 @@
 		<h2>Plaatjes</h2>
 		
 		<p>
-			Om een afbeelding te tonen gebruik je de <code>img</code> tag.
+			Om een afbeelding te tonen gebruik je de <code>img</code> element.
 		</p>
 		
 		<figure>
-			<figcaption>voorbeeld 11: plaatje</figcaption>
-			<pre><code>&lt;img src=&quot;images/plaatje.jpg&quot; /&gt;</code></pre>
+			<figcaption>voorbeeld 10: plaatje</figcaption>
+			<pre><code>&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/1200px-Cat03.jpg&quot;&gt;</code></pre>
 		</figure>
 		
 		<p>
@@ -254,24 +231,24 @@
 			Om de grootte van een plaatje aan te passen kan je een class gebruiken.
 		</p>
 		<figure>
-			<figcaption>voorbeeld 12: plaatje grootte aanpassen</figcaption>		
-			<pre><code>&lt;img class=&quot;heelklein&quot; src=&quot;images/plaatje.jpg&quot; /&gt;</code></pre>
+			<figcaption>voorbeeld 11: plaatje grootte aanpassen</figcaption>		
+			<pre><code>&lt;img class=&quot;heelklein&quot; src=&quot;images/plaatje.jpg&quot;&gt;</code></pre>
 			<pre><code>&lt;style&gt;
-	img.heelklein {
+	.heelklein {
 		width: 50px;
 		height: auto;
 	}
 &lt;/style&gt;
 			</code></pre>
 		</figure>
-		
+
 		<aside class="opdracht">
 			<img src="images/opdracht.png" alt="Opdracht:" />
 			<p>
-				Kies een plaatje uit de map images en voeg deze toe aan je pagina. Je kan ook een plaatje van internet downloaden en in de map plaatsen.
+				Probeer zelf een leuk plaatje te vinden voor je site en pas het attribuut <code>src</code> aan.
 			</p>
 		</aside>
-		
+	
 		<a href="html-workshop-deel2.html">Verder met deel 2 van de workshop &gt;&gt;&gt;</a>
 	</body>
 </html>

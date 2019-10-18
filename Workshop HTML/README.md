@@ -2,7 +2,7 @@
 
 ## Voorbereiding workshop
 - Plaats de bestanden op de laptops in C:\Devoxx4kids\HTML.
-- Installeer Notepad++ en open deze alvast.
+- Installeer Visual Studio Code en open deze alvast.
 - Open html-workshop-deel1.html in een browservenster. De kinderen zullen hiermee starten.
 
 ## Instructies begeleider
